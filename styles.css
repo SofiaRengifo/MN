@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --ui-font: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --bs-nav-link-font-size: 1.1rem;
+}
+
+body {
+    font-family: var(--ui-font);
+    font-weight: 400;
+    background-color: #fff3ff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #2B1F47;
+}
+h1{
+    font-size: calc(2.1rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+    h1{
+        font-size: 3.4rem;
+    }
+}
+nav {
+    background-color: #FF6DC6;
+    padding-top: 29px!important;
+    padding-bottom: 29px!important;
+    position: sticky!important;
+    z-index: 1000;
+    top: 0;
+}
+.nav-link{
+    color: white;
+}
+.navbar-toggler {
+    background-color: #fff3ff;
+    border: var(--bs-border-width) solid rgb(255 109 198);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.py-7{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav{
+        padding-top: 30px;
+    }
+    .navbar-collapse .col-lg-3{
+        border-top: #ffffff 1px solid;
+        padding-top: 25px;
+        margin-top: 20px;
+    }
+    .logo img{
+        height: 65px;
+    }
+    .order-lg-1{
+        text-align: center;
+    }
+    .order-lg-2{
+        padding-bottom: 1rem;
+    }
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top:0;
+    padding: 30px;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 25.3px rgba(43, 31, 71, 0.1);
+    border-radius: 0px 0px 45px 45px;
+    background-color: white;
+    width: fit-content;
+}
+.btn-social
+ {
+    width: 36px;
+    height: 36px;
+}
+.btn-social
+ {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background:white;
+    color: #2B1F47;
+    transition: all .2s ease-in-out;
+}
+.btn-social:hover
+ {
+    background:#2B1F47;
+    color: #ffffffff;
+    transition: all .2s ease-in-out;
+}
+.banner{
+    width: 95%;
+    max-width: 445px;
+}
+.btn-basic{
+    background: linear-gradient(90deg, #FF6DC6 0%, #8770E5 100%);
+    box-shadow: 0px 0px 17px rgba(43, 31, 71, 0.25);
+    border-radius: 15px;
+    padding: 0.75rem;
+    width: 200px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.btn-basic:hover{
+    transform: scale(0.95);
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.certificacion img{
+    max-width: 300px;
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+.certificacion{
+    width: fit-content;
+}
+
+
+
+@media (min-width: 992px) {
+    .variant{
+    height: 440px;object-fit: cover;
+}
+}
+section.contact-us #contact
+ {
+    margin-left: -100px;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+section.contact-us #contact input
+ {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f4f7fb;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+
+section.contact-us #contact textarea
+ {
+    width: 100%;
+    min-height: 140px;
+    max-height: 180px;
+    border-radius: 5px;
+    background-color: #f4f7fb;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+section.contact-us .contact-info {
+    background-color: #2b1f47;
+    margin-top: -30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    z-index: 5;
+    position: relative;
+    padding: 20px;
+}
+
+section.contact-us .contact-info .icon i {
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: rgb(219, 138, 222);
+    background: linear-gradient(-145deg, #FF6DC6  0%, #8770E5  100%);
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    section.contact-us #contact {
+        margin-left: 0;
+    }
+    section.contact-us .contact-info{
+        border-radius: 0 0 15px 15px;
+    }
+}
